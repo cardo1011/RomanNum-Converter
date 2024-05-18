@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: goldenrod;
+  font-family: "Cinzel";
+  margin-top: 13%;
+}
+
+header {
+  font-weight: 400;
+  font-size: 2.5em;
+}
+
+#input {
+  background-color: silver;
+  border: 15px solid grey;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+
+#input-label {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+input {
+  background-color: blanchedalmond;
+  height: 4vh;
+  width: 8vw;
+  font-size: 1.3em;
+}
+
+#convert-btn {
+  width: 4vw;
+  margin-top: 3%;
+  padding: 5%;
+  border: none;
+  border-radius: 5px;
+  background-color: darkgrey;
+  color: black;
+  font-size: large;
+}
