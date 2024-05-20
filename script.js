@@ -27,7 +27,7 @@ map.set(1000, "M");
 
 const romanValues = [...map.keys()].sort((a, b) => b - a);
 
-console.log(romanValues);
+// console.log(romanValues);
 
 function romanConverter() {
   let input = document.getElementById("number").value;
@@ -47,11 +47,12 @@ function romanConverter() {
     return "Please enter a number less than or equal to 3999";
   } else {
     romanValues.forEach((value) => {
-      while (input >= value) {
+      if (input >= value) {
         result += map.get(value);
         input -= value;
       }
     });
+
     resultBox.style.visibility = "visible";
     resultBox.style.fontSize = "3em";
     return result;
